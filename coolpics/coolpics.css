@@ -1,0 +1,130 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    background-color: #ccc;
+}
+
+header {
+    background-color: #2b78e4;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+header h1{
+    margin: 0;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+nav {
+    display: none;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    max-width: 300px; 
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%; 
+    height: auto;
+    border: 10px solid white; 
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    max-width: 250px; 
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.menu-button {
+    display: block;
+    margin: 10px auto;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #2b78e4; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px; 
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media screen and (min-width: 700px) {
+    .card {
+        box-sizing: border-box;
+        flex: 0 0 calc(50% - 20px); 
+        margin: 10px;
+    }
+    
+    .menu-button { display: block; }
+    nav { display: none; }
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+    .card {
+        flex: 0 0 calc(33.33% - 40px); 
+        max-width: 33.33%;
+    }
+    
+    .gallery {
+        max-width: 1000px; 
+        margin: 0 auto;
+    }
+
+    main {
+        
+        max-width: 850px; 
+        margin: 0 auto; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 15px; 
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav a{
+        color: white;
+        margin: 0 15px;
+    }
+}
