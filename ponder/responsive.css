@@ -46,6 +46,24 @@ footer {
     text-align: center;
 }
 
+.hide a{
+    display: inline-block;
+}
+
+
+.change .bar1 {
+  transform: translate(0, 7px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+   
+.menu-btn div{
+    transition: transform 0.5s ease-in-out,
+                opacity 0.5s ease-in-out;
+}
 
 @media screen and (min-width: 700px) {
     main {
