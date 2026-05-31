@@ -3,14 +3,14 @@
     --book-title: #a62b2b;
 }
 
-main{
+article{
     display: grid;
     border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
     margin-top: 20px;
 }
 
-#review_info{
+.review_info{
     text-align: right;
 }
 
@@ -18,13 +18,13 @@ main{
     color: #ffb703;
 }
 
-#review_body{
+.review_body{
     text-align: left;
     padding-left: 15%;
     padding-right: 15%;
 }
 
-#review_body img{
+.review_body img{
     display: block;
     max-width: 100%;
     height: auto;
@@ -65,20 +65,20 @@ footer{
 }
 
 @media (min-width: 768px) {
-    main{
+    article{
         grid-template-columns: 1fr 2fr;
         align-items: stretch;
         padding-top: 35px;
         padding-bottom: 35px;
     }
 
-    #review_info{
+    .review_info{
         border-right: 2px solid var(--border-color);
         padding-right: 30px;
         text-align: right;
     }
 
-    #review_body{
+    .review_body{
         padding-left: 30px;
         padding-right: 5%;
     }
