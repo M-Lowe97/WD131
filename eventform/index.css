@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background:  #BFCAD6;
+  margin: 0;
+}
+
+.wrapper {
+  max-width: 850px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.full {
+    grid-column: 1 / 3;
+}
+
+input,
+select,
+button {
+  padding: 0.6rem;
+  font: inherit;
+}
+
+button {
+  background: #BFCAD6;
+  transition: background 0.5s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #BFCAD6;
+}
+
+#idInput[hidden],
+#codeInput[hidden] {
+  display: none;
+}
+
+#output {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+          

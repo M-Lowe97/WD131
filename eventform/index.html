@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Tickets</title>
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <link type="image/png" rel="icon" href="images.jpg">
+    <script src="index.js" defer></script>
+</head>
+<body>
+   <main class="wrapper">
+         <h1><strong>Event Ticket</strong></h1>
+    
+        <form id="event-form">
+            <div class="form-field">
+                <label for="firstName">
+                    First Name
+                </label>
+                <input id="firstName" name="firstName" type="text" required>
+            </div>
+            <div class="form-field">
+                <label for="lastName">
+                    Last Name
+                </label>
+                <input id="lastName" name="lastName" type="text" required>
+            </div>
+
+            <div class="form-field full">
+                <label for="email">
+                    Email
+                </label>
+                <input id="email" name="email" type="email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="type">
+                    Type
+                </label>
+                <select id="type" name="type" required>
+                    <option value>
+                        Choose One
+                    </option>
+                    <option value="student">
+                        Student
+                    </option>
+                    <option value="guest">
+                        Guest
+                    </option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="eventDate" >
+                    Event Date
+                </label>
+                <input id="eventDate" name="eventDate" type="date" required>
+            </div>
+
+            <div id="idInput" class="form-field full" hidden>
+                <label for="idNumber">Student I#</label>
+                <input id="idNumber" name="idNumber" type="text" required>
+            </div>
+
+            <div id="codeInput" class="form-field full" hidden>
+                <label for="eventCode">Event Code</label>
+                <input id="eventCode" name="eventCode" type="text" required>
+            </div>
+
+            <button class="full" type="submit">Create Ticket</button>
+        </form>
+
+        <section id="output"></section>
+   </main>
+
+
+
+
+</body>
+</html>
