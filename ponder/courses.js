@@ -8,15 +8,15 @@ const aCourse = {
         { sectionNum: 2, roomNum: "STC 347", enrolled: 28, days: "TTh", instructor: "Sis A"}
         ],
     
-    //enrollStudent: function(sectionName) {
+    enrollStudent: function(sectionName) {
         
-        //this.sections.forEach(function(section) {
-         //   if(section.sectionNum == sectionNum){
-         //       section.enrolled++;
-          //      return;
-          //  }
-        //});
-    //}
+        this.sections.forEach(function(section) {
+            if(section.sectionNum == sectionNum){
+                section.enrolled++;
+                return;
+            }
+        });
+    }
 
     //alternative this.section.find(section => section.sectionNum == sectionNum).enrolled++;
 }
