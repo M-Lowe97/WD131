@@ -8,7 +8,7 @@ const aCourse = {
         { sectionNum: 2, roomNum: "STC 347", enrolled: 28, days: "TTh", instructor: "Sis A"}
         ],
     
-    enrollStudent: function(sectionName) {
+    enrollStudent: function(sectionNum) {
         
         this.sections.forEach(function(section) {
             if(section.sectionNum == sectionNum){
@@ -40,4 +40,5 @@ renderSections(aCourse.sections);
 document.querySelector("#enrollStudent").addEventListener("click", function () {
     const sectionNum = document.querySelector("#sectionNumber").value;
     aCourse.enrollStudent(sectionNum);
+    renderSections(aCourse.sections);
 });
