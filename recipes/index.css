@@ -1,0 +1,46 @@
+#hero{
+    font-family: 'Amatic SC', serif;
+    font-size: 4rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#hero img{
+    height: 150px;
+    width: 150px;
+    flex-shrink: 0;
+}
+
+
+.search-bar{
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid #000000;
+    border-radius: 15px;
+}
+
+.search-bar img{
+    height: 48px;
+    width: 48px;
+}
+
+#recipe-search{
+    width: 80%;
+    border: none;
+    background: transparent;
+}
+
+#review-card{
+    display: flex;
+    max-width: 500px;
+    border: 2px solid #000000;
+}
+
+#review-card img{
+    max-width: fit-content;
+}
