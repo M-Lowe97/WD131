@@ -1,0 +1,14 @@
+*{
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td.secondary{
+    color: #3187B5;
+}
+
+.accent1{
+    color: #D4AF37;
+}
