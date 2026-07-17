@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindARelic</title>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0" defer></script>
+    <script src="warframeSearchData.js" defer></script>
+    <script src="findarelic.js" defer></script>
+    <link type="text/css" rel="stylesheet" href="findarelic.css">
+</head>
+<body>
+    <header></header>
+
+    <main>
+
+        <form id="search-form" class="search-form">
+            <div class="form-field">
+                <label for="mission-search" class="sr-only">Search Missions</label>
+                <input type="search" id="mission-search" placeholder="What Relic are you looking for?">
+                <ul id="mission-reward" class="dropdownbox-hidden"></ul>
+            </div>
+
+            <div class="form-field">
+                <label for="relic-search" class="sr-only">Search Relics</label>
+                <input type="search" id="relic-search" placeholder="What parts are you looking for?">
+                <ul id="relic-reward" class="dropdownbox-hidden"></ul>
+            </div>
+        </form>
+
+        <h2>Recent Results</h2>
+        <section id="search-results">
+
+        </section>
+
+        <section id="recent-results"></section>
+    </main>
+
+    <footer></footer>
+</body>
+</html>
